@@ -39,7 +39,7 @@ public class Main {
 //            a = temp;
 //            count++;
 //        }
-         int term , a = 0 , b =1 , c;
+         int term , a = 0 , b = 1 , c;
          term = input.nextInt();
          for ( int i = 1 ; i <= term ; i++){
           c = a + b;
