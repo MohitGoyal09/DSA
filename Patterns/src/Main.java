@@ -3,7 +3,7 @@
 //https://takeuforward.org/strivers-a2z-dsa-course/must-do-pattern-problems-before-starting-dsa/
 public class Main {
     public static void main(String[] args) {
-        pattern4(4);
+        pattern13(4);
     }
 
     static void pattern1(int n) {
@@ -196,6 +196,37 @@ public class Main {
             // As soon as the numbers for each iteration are printed, we move to the
             // next row and give a line break otherwise all numbers
             // would get printed in 1 line.
+            System.out.println();
+        }
+    }
+
+    static void pattern12( int N){
+        int space = 2*(N-1);
+        for ( int i = 1 ; i <= N ; i++){
+            for ( int j = 1 ; j <=  i ; j++){
+                System.out.print(j);
+            }
+
+           for ( int x = 1; x <= space ; x++ ){
+               System.out.print(" ");
+           }
+
+            for ( int j = i ; j >=  1 ; j--){
+                System.out.print(j);
+            }
+            System.out.println();
+            space -=2;
+        }
+
+    }
+
+    static void pattern13( int N){
+        for ( int i = 1 ; i <=N ; i++){
+            int num = 1;
+            for ( int j = 1 ; j <=i ; j++){
+                System.out.print(num + "");
+                num +=1;
+            }
             System.out.println();
         }
     }
