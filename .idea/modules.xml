@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Arrays/Arrays.iml" filepath="$PROJECT_DIR$/Arrays/Arrays.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Basic maths/Basic maths.iml" filepath="$PROJECT_DIR$/Basic maths/Basic maths.iml" />
       <module fileurl="file://$PROJECT_DIR$/Binary Search/Binary Search.iml" filepath="$PROJECT_DIR$/Binary Search/Binary Search.iml" />
       <module fileurl="file://$PROJECT_DIR$/LINEAR SEARCH/LINEAR SEARCH.iml" filepath="$PROJECT_DIR$/LINEAR SEARCH/LINEAR SEARCH.iml" />
       <module fileurl="file://$PROJECT_DIR$/Patterns/Patterns.iml" filepath="$PROJECT_DIR$/Patterns/Patterns.iml" />

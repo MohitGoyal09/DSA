@@ -1,6 +1,6 @@
 
-//STRIDER "S SHEET
-//https://takeuforward.org/strivers-a2z-dsa-course/must-do-pattern-problems-before-starting-dsa/
+//STRIDER 'S SHEET
+// https://takeuforward.org/strivers-a2z-dsa-course/must-do-pattern-problems-before-starting-dsa/
 public class Main {
     public static void main(String[] args) {
         pattern13(4);
