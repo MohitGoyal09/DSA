@@ -5,6 +5,8 @@ Welcome to the Data Structures and Algorithms in Java repository! This repositor
 ## Table of Contents
 
 - [Introduction](#introduction)
+- [Resources](#Resources)
+- [Guide](#GUIDE)
 - [Data Structures](#data-structures)
   - [Arrays](#arrays)
   - [Linked Lists](#linked-lists)
@@ -25,6 +27,35 @@ Welcome to the Data Structures and Algorithms in Java repository! This repositor
 ## Introduction
 
 Data structures and algorithms are the building blocks of computer programs. They are essential tools for solving complex problems efficiently and are commonly tested in technical interviews. This repository aims to provide clear and concise Java implementations of various data structures and algorithms, along with explanations and examples, to help you understand and apply these concepts in your own projects.
+
+## Resources 
+ LinkedList , Searching and Sorting : Kunal Kushwaha
+ <br>
+Stacks & Queue : Pepcoding
+<br>
+Binary Tree & BST : Takeuforward
+<br>
+Recursion : Pepcoding
+<br>
+DP : Takeuforward
+<br>
+Graphs : Takeuforward
+<br>
+Heaps : Anuj Bhaiya
+<br>
+Greedy Algorithm : Check Video in DSA Resources Playlist (Link in Description)
+<br>
+Algorithms Questions : Techdose , Takeuforward , CodenCode , Fraz , Pepcoding
+
+## GUIDE 
+[Striver](https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2/)
+
+
+## PRACTICE 
+
+LEETCODE
+<br>
+CODING NINJA
 
 ## Data Structures
 
