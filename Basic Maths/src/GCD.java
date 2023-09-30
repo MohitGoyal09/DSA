@@ -16,7 +16,7 @@ public class GCD {
     }
 
     static void optimizited( int n1 , int n2){
-        // T  C = O(log ɸ min(a,b))
+        // T&C = O(log ɸ min(a,b))
         while ( n1>0 && n2>0){
              if ( n1>n2){
                  n1 = n1%n2;
@@ -28,4 +28,14 @@ public class GCD {
              }
         }
     }
+//    static int optimized2( int n1 , int n2){
+//        if ( n2 == 0){
+//          return n1;
+//    }
+//        return optimized2(n2, n1%n2);
+//
+//}
+
+//    }
 }
+
