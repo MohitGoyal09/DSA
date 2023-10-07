@@ -9,4 +9,5 @@ public class N {
         func( i-1,n);
 
     }
+
 }

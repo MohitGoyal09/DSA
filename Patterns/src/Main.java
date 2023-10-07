@@ -3,7 +3,7 @@
 // https://takeuforward.org/strivers-a2z-dsa-course/must-do-pattern-problems-before-starting-dsa/
 public class Main {
     public static void main(String[] args) {
-        pattern13(4);
+        pattern8(4);
     }
 
     static void pattern1(int n) {
@@ -119,11 +119,9 @@ public class Main {
 
    static void pattern8(int N) {
         // This is the outer loop which will loop for the rows.
-        for(int i=0;i<N; i++)
-        {
+        for(int i=0;i<N; i++){
         // For printing the spaces before stars in each row
-        for(int j=0;j<i; j++)
-        {
+        for(int j=0;j<i; j++) {
         System.out.print(" ");
         }
 

@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Divisors {
@@ -34,6 +35,7 @@ public class Divisors {
             }
 
         }
+//        Arrays.sort(list);
         System.out.println(list);
     }
 
