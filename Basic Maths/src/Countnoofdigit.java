@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Cs {
+public class Countnoofdigit {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         int n = input.nextInt();
