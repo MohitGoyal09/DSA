@@ -15,10 +15,10 @@ public class RRotate {
     // * Time Complexity: O(n)
     // * Space Complexity: O(k)
     public static void rotateByK(int[] arr , int k , int n){
-            if ( n == 0) return;
-            k = k % n;
-            if ( k > n ) return;
-            int[] temp = new int[k];
+        if ( n == 0) return;
+        k = k % n;
+        if ( k > n ) return;
+        int[] temp = new int[k];
         for (int i = n - k; i < n; i++) {
             temp[i - n + k] = arr[i];
         }
