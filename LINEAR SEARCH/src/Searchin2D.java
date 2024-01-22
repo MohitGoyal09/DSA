@@ -6,7 +6,7 @@ public class Searchin2D {
                   {56 , 67 , 45 , 78},
                   {23 , 24 , 235 , 223}
           };
-          int target = 1;
+          int target = 67;
           int[] ans = search(arr , target);
           System.out.println(Arrays.toString(ans));
     }

@@ -19,6 +19,12 @@ public class Hashmap {
             freq++;
             hp.put(key,freq);
         }
+        // Iterate over the map:
+        /*
+        for (Map.Entry<Integer, Integer> it : mp.entrySet()) {
+            System.out.println(it.getKey() + "->" + it.getValue());
+        }
+        */
          int q;
           q = in.nextInt();
           while ( q-- >0){

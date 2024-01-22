@@ -6,7 +6,7 @@ public class Char {
         String s;
         s = in.next();
 
-        // precompute
+        // ! precompute
         int[] hash = new int[26];
         for ( int i = 0 ; i <s.length() ; i++){
             hash[s.charAt(i) - 'a']+=1;
@@ -16,7 +16,7 @@ public class Char {
         while ( n-- !=0){
             char c;
             c = in.next().charAt(0);
-            //fetch;
+            // ! fetch;
             System.out.println(hash[c - 'a']);
         }
     }

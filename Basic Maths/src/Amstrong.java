@@ -23,7 +23,7 @@ public class Amstrong {
        }
        int sumofpower = 0;
        while ( n!= 0){
-           int digit = n%10;
+           int digit = n % 10;
            sumofpower +=Math.pow(digit,count);
            n /=10;
        }

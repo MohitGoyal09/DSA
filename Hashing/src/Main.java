@@ -1,16 +1,11 @@
-
 import java.util.Scanner;
 
-// Time Complexity = O(Q*N)
-// Where
-//  number of queries = Q
-//  N = size of the string.
+//  * Time Complexity = O(Q*N)
+//  * Where
+//  * number of queries = Q
+//  * N = size of the string.
 
-//=================================================================
-
-// NUMBER HASHING;
-
-
+// ! NUMBER HASHING;
 public class Main {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
@@ -21,7 +16,7 @@ public class Main {
              arr[i] = in.nextInt();
         }
 
-        //Precompute
+        // ! Precompute
         int[] hash =  new int[13];
 
         for ( int i = 0; i<n ; i++){
@@ -32,7 +27,7 @@ public class Main {
         while (q-- !=0){
             int num;
             num = in.nextInt();
-            //Fetching
+            // ! Fetching
             System.out.println(hash[num]);
         }
     }
