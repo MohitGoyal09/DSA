@@ -27,6 +27,7 @@ public class Subarray {
         return len;
     }
     // * Better approach
+    //  * Optimal Solution if array contains negatives and zeros also
     // ! Time complexity = O(nlogn)
     // ! Space complexity = O(n)
     static int betterarray(int[] arr , long k) {
@@ -44,7 +45,7 @@ public class Subarray {
                 int len = i - preSumMap.get(rem);
                 maxLen = Math.max(maxLen, len);
             }
-            if (!preSumMap.containsKey(rem)){
+            if (!preSumMap.containsKey(sum)){
                 preSumMap.put(sum, i);
             }
       }
