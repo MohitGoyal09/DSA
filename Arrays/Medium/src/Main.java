@@ -8,8 +8,8 @@ public class Main {
         int[] arr = {2, 7, 11, 15};
         int target = 18;
         int n = arr.length;
-        int[] ans = optimized(arr, n, target);
-        System.out.println(Arrays.toString(ans));
+//        int[] ans = optimized(arr, n, target);
+//        System.out.println(Arrays.toString(ans));
     }
 
     // ? Brutte Force
@@ -54,17 +54,17 @@ public class Main {
     // * TIME COMPLEXITY - O(n) + O(nlogn)
     // * SPACE COMPLEXITY - O(1)
 
-    static int[] optimized(int[] a, int n, int target){
+    static String optimized(int[] a, int n, int target){
         Arrays.sort(a);
         int left = 0 , right = n-1;
         while ( left < right) {
             int sum = a[left] + a[right];
             if (sum == target) {
-                return new int[]{left, right};
+                return "YES";
             } else if (sum < target) left++;
             else right--;
         }
-        return new int[]{-1, -1};
+        return "NO";
     }
 
 }
