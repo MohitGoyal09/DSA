@@ -85,10 +85,21 @@ public class Alt_pos_neg {
                 ans.set(2*i + 1 , neg.get(i));
             }
             int index = neg.size() * 2;
-            for ( int i = pos.size() ; i < neg.size() ; i++){
+            for ( int i = neg.size() ; i < pos.size() ; i++){
                 ans.set(index , pos.get(i));
                 index++;
             }
+        } else {
+            for ( int i = 0 ; i < pos.size() ; i++){
+                ans.set(2*i,pos.get(i));
+                ans.set(2*i + 1 , neg.get(i));
+            }
+            int index = pos.size() * 2;
+            for ( int i = pos.size() ; i < neg.size() ; i++){
+                ans.set(index , neg.get(i));
+                index++;
+            }
+
         }
         return ans;
     }
