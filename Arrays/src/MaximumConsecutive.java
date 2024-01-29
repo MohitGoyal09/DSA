@@ -1,3 +1,5 @@
+// * Time Complexity = O(N)
+// * Space Complexity = O(1)
 public class MaximumConsecutive {
     public static void main(String[] args) {
         int max = 0 ;
@@ -12,5 +14,3 @@ public class MaximumConsecutive {
     }
 }
 
-// * Time Complexity = o(N)
-// * Space Complexity = O(1)
