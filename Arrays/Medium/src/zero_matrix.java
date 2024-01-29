@@ -87,7 +87,7 @@ public class zero_matrix {
     static int[][] optimal(int[][] a){
         int n = a.length;
         int m = a[0].length;
-        // int[] roo = new int[n]; --> matrix[..][0]
+        // int[] row = new int[n]; --> matrix[..][0]
         // int[] col = new int[m]; --> matrix[0][..]
         boolean fr = false,fc = false;
         for ( int i = 0; i < n ; i++){

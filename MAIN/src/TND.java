@@ -23,16 +23,21 @@ public class TND {
 //        for ( int i = 0; i < arr.length; i++) {
 //            System.out.print(arr[i] + " ");
 //        }
-        Scanner in = new Scanner(System.in);
-        int n = in.nextInt();
-        String s = in.next();
-        int[] hash = new int[26];
-        for (int i = 0; i < s.length(); i++) {
-            hash[s.charAt(i) - 'a'] += 1;
-        }
-        while (n-- != 0) {
-            char c = in.next().charAt(0);
-            System.out.println(hash[c - 'a']);
+//        Scanner in = new Scanner(System.in);
+//        int n = in.nextInt();
+//        String s = in.next();
+//        int[] hash = new int[26];
+//        for (int i = 0; i < s.length(); i++) {
+//            hash[s.charAt(i) - 'a'] += 1;
+//        }
+//        while (n-- != 0) {
+//            char c = in.next().charAt(0);
+//            System.out.println(hash[c - 'a']);
+            int[] a = {2, 3, 5, 1, 9};
+        long k = 10;
+        int len = sum(a, k);
+        System.out.println("The length of the longest subarray is: " + len);
+
         }
 //      int arr[]  = new int[n];
 //      for ( int i = 0 ;  i  < n ; i++){
@@ -47,9 +52,30 @@ public class TND {
 //          int num = in.nextInt();
 //          System.out.println(hash[num]);
 //      }
+      static int sum(int[] a , long k){
+        int n = a.length;
+       long sum = 0;
+        int maxlen = 0;
+        HashMap<Long,Integer> map = new HashMap<>();
+        for ( int i = 0 ; i < n ; i++){
+            sum +=a[i];
+           if ( sum == k) maxlen = Math.max(maxlen , i+1);
+           long rem = sum - k;
+          if (map.containsKey(rem)){
+              int len = i - map.get(rem);
+              maxlen = Math.max(maxlen  , len);
+          }
+          if (!map.containsKey(sum)){
+              map.put(sum , i);
+          }
 
+
+
+        }
+        return maxlen;
+      }
     }
-}
+//}
 
 //    static boolean Armstrongg(int n){
 //        int temp = n;

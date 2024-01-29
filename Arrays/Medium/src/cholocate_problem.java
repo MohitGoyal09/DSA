@@ -65,7 +65,7 @@ public class cholocate_problem {
         long min = Integer.MAX_VALUE;
         Collections.sort(a);
         for ( int i = 0 ; i < n ; i++){
-            int j = i + m -1;
+            int j = i + (m - 1);
             if ( j >= n) break;
             int diff = a.get(j) - a.get(i);
             min = Math.min(min , diff);
