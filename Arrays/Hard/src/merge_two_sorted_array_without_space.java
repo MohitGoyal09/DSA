@@ -1,6 +1,6 @@
 import java.util.Arrays;
 
-public class merge_overlapping_intervals {
+public class merge_two_sorted_array_without_space {
     public static void main(String[] args) {
         long[] arr1 = {1, 4, 8, 10};
         long[] arr2 = {2, 3, 9};
