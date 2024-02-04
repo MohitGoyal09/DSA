@@ -24,12 +24,14 @@ public class rotated_search_array {
             }
             else {
                 if ( arr[mid] <= x && arr[high] >= x){
-                    low = mid+1;
+                    low = mid + 1;
                 } else high = mid-1;
             }
         }
         return ans;
     }
+
+    // ! IF ARRAY HAS DUPLICATE ELEMENTS
     static int search2(int[] arr , int x){
         int n = arr.length;
         int low = 0 , high =  n - 1;
