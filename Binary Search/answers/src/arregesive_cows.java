@@ -39,7 +39,7 @@ public class arregesive_cows {
         int low = 1 , high = stalls[n-1] - stalls[0];
         while ( low <= high){
             int mid = (low + high)/2;
-            if ( canplace(stalls , mid  , cows) == true) low = mid + 1;
+            if (canplace(stalls, mid, cows)) low = mid + 1;
             else high = mid - 1;
         }
         return high;
