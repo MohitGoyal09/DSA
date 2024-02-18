@@ -67,10 +67,10 @@ public class median_2_sorted_array {
             if (cnt == ind2) indel2 = b[j];
         }
         if (n % 2 == 1) {
-            return (double)indel2;
+            return indel2;
         }
 
-        return (double)((double)(indel1 + indel2)) / 2.0;
+        return (double)(indel1 + indel2) / 2.0;
 
     }
 
