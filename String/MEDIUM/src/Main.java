@@ -1,31 +1,66 @@
-// ! Intuition
-//* The goal is to find the largest odd number within a given integer represented as a string.
-// * We need to identify the largest odd substring or return an empty string if no odd number exists.
-//
-// ! Approach
-//* Iterate through the string from right to left.
-//* If the last digit is odd, return the entire string as it is already the largest odd number.
-//* If the last digit is even, keep moving left until an odd digit is found.
-//* Return the substring from the beginning of the string to the index where the first odd digit is encountered.
-// !       Complexity
-//* The time complexity is O(n), where n is the length of the input string num.
-//* The space complexity is O(1) since we are not using any extra space that scales with the input size.
-
 public class Main {
     public static void main(String[] args) {
 
-        String num = "1524";
-        System.out.println(sol(num));
+        String s = "babad";
+        System.out.println(expand(s));
+    }
 
-    }
-    static String sol(String S){
-        if ((int)S.charAt(S.length()-1) %2==1) return S;
-        int i = S.length()-1;
-        while (i >= 0){
-            int num = S.charAt(i);
-            if (num % 2 == 1) return S.substring(0,i+1);
-            i--;
+    // ! Time Complexity : O(N^3)
+    static String burutte(String S){
+        if (S.length() <= 1) return S;
+        int maxLen = 1;
+        String mxstr = S.substring(0,1);
+        for (int i = 0 ; i < S.length() ; i++){
+            for ( int j = i + maxLen ; j < S.length() ; j++){
+                if (j-i > maxLen && isPalindrome(S.substring(i,j))){
+                    maxLen =  j - i;
+                    mxstr = S.substring(i,j);
+                }
+            }
         }
-        return "";
+        return mxstr;
     }
+    static boolean isPalindrome(String str) {
+        int left = 0;
+        int right = str.length() - 1;
+
+        while (left < right) {
+            if (str.charAt(left) != str.charAt(right)) {
+                return false;
+            }
+            left++;
+            right--;
+        }
+
+        return true;
+    }
+
+    // * Expand from centre Approach
+
+    // ! Time Complexity : O(N^2)
+    static String expand(String s){
+      if (s.length() <= 1) return s;
+      String str = s.substring(0,1);
+      for (int i = 0 ; i < s.length() ; i++){
+          String odd = expandfromcentre(s,i,i);
+          String even = expandfromcentre(s,i,i+1);
+
+          if (odd.length() > str.length()) {
+              str = odd;
+          }
+          if (even.length() > str.length()) {
+              str = even;
+          }
+      }
+      return str;
+    }
+    static String expandfromcentre(String str , int start, int end){
+        while (start >= 0 && end < str.length() && str.charAt(start) == str.charAt(end)){
+            start--;
+            end++;
+        }
+        return str.substring(start+1,end);
+    }
+
+
 }
