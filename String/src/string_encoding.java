@@ -14,8 +14,8 @@ public class string_encoding {
             for( i=1; i< message.length(); i++){
                 if(message.charAt(i) != message.charAt(i-1)) {
                     // System.out.println("str "+message.substring(i-count,i));
-                    sb.append(message.charAt(i-1)+"");
-                    sb.append(count+"");
+                    sb.append(message.charAt(i - 1));
+                    sb.append(count);
                     count = 1;
                 }else count++;
             }

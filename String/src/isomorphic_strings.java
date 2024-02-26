@@ -20,7 +20,7 @@ public class isomorphic_strings {
             if (map.containsKey(c1)) {
                 if (map.get(c1) != c2) return false;
             } else {
-                if (visited.containsKey(c2) == true) return false;
+                if (visited.containsKey(c2)) return false;
                 else {
                     map.put(c1, c2);
                     visited.put(c2,true);
