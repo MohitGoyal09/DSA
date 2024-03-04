@@ -70,8 +70,7 @@ public class insert {
         prev.next = newnode;
         temp.back = newnode;
 
-        newnode.next = temp;
-        newnode.back = prev;
+
         return head;
     }
     public static void insertbeforeNode(Node node , int val){
@@ -79,5 +78,14 @@ public class insert {
         Node newnode = new Node(val , node , prev);
         prev.next = newnode;
         node.back = newnode;
+    }
+    public static Node insertAtTail(Node head , int k){
+        Node newnode = new Node(k);
+        if (head == null) return newnode;
+        Node current = head;
+        while(current.next != null) current = current.next;
+        current.next = newnode;
+        newnode.back = current;
+        return head;
     }
 }
