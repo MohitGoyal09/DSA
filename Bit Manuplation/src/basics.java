@@ -8,7 +8,7 @@ public class basics {
         // * Left Shift
      // !   return ((n << k ) & 1) != 0;
     }
-       // ! Even or Odd
+    // ! Even or Odd
     public static boolean isEven(int n) { return ((n & 1) == 0); }
     // ! Set Kth Bit
     static int setKthBit(int N,int K){

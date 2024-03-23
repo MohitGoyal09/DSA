@@ -43,4 +43,17 @@ public class Main {
         else if ( n % 4 == 3) return 0;
         else return n;
     }
+
+    // ! Swap Two Numbers
+    static List<Integer> swap(int a,int b){
+        // code here
+        a=a^b;
+        b=a^b;
+        a=a^b;
+        List<Integer> resultList = new ArrayList<>();
+        resultList.add(a);
+        resultList.add(b);
+        return resultList;
+    }
+
 }
