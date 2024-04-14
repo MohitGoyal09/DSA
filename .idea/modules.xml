@@ -8,7 +8,6 @@
       <module fileurl="file://$PROJECT_DIR$/Binary Search/Binary Search.iml" filepath="$PROJECT_DIR$/Binary Search/Binary Search.iml" />
       <module fileurl="file://$PROJECT_DIR$/Bit Manuplation/Bit Manuplation.iml" filepath="$PROJECT_DIR$/Bit Manuplation/Bit Manuplation.iml" />
       <module fileurl="file://$PROJECT_DIR$/DDLL/DDLL.iml" filepath="$PROJECT_DIR$/DDLL/DDLL.iml" />
-      <module fileurl="file://$PROJECT_DIR$/DSA.iml" filepath="$PROJECT_DIR$/DSA.iml" />
       <module fileurl="file://$PROJECT_DIR$/DDLL/HARD/HARD.iml" filepath="$PROJECT_DIR$/DDLL/HARD/HARD.iml" />
       <module fileurl="file://$PROJECT_DIR$/Arrays/Hard/Hard.iml" filepath="$PROJECT_DIR$/Arrays/Hard/Hard.iml" />
       <module fileurl="file://$PROJECT_DIR$/Hashing/Hashing.iml" filepath="$PROJECT_DIR$/Hashing/Hashing.iml" />
@@ -18,12 +17,15 @@
       <module fileurl="file://$PROJECT_DIR$/String/MEDIUM/MEDIUM.iml" filepath="$PROJECT_DIR$/String/MEDIUM/MEDIUM.iml" />
       <module fileurl="file://$PROJECT_DIR$/Arrays/Medium/Medium.iml" filepath="$PROJECT_DIR$/Arrays/Medium/Medium.iml" />
       <module fileurl="file://$PROJECT_DIR$/DDLL/Medium DDL/Medium DDL.iml" filepath="$PROJECT_DIR$/DDLL/Medium DDL/Medium DDL.iml" />
+      <module fileurl="file://$PROJECT_DIR$/oops/OOPS.iml" filepath="$PROJECT_DIR$/oops/OOPS.iml" />
       <module fileurl="file://$PROJECT_DIR$/Patterns/Patterns.iml" filepath="$PROJECT_DIR$/Patterns/Patterns.iml" />
       <module fileurl="file://$PROJECT_DIR$/Recursion/Recursion.iml" filepath="$PROJECT_DIR$/Recursion/Recursion.iml" />
       <module fileurl="file://$PROJECT_DIR$/Sorting/Sorting.iml" filepath="$PROJECT_DIR$/Sorting/Sorting.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Stack-Queues/Stack-Queues.iml" filepath="$PROJECT_DIR$/Stack-Queues/Stack-Queues.iml" />
       <module fileurl="file://$PROJECT_DIR$/String/String.iml" filepath="$PROJECT_DIR$/String/String.iml" />
       <module fileurl="file://$PROJECT_DIR$/Binary Search/answers/answers.iml" filepath="$PROJECT_DIR$/Binary Search/answers/answers.iml" />
       <module fileurl="file://$PROJECT_DIR$/LinkList/clone_ll/clone_ll.iml" filepath="$PROJECT_DIR$/LinkList/clone_ll/clone_ll.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dsa.iml" filepath="$PROJECT_DIR$/dsa.iml" />
     </modules>
   </component>
 </project>
