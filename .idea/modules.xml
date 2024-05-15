@@ -23,9 +23,12 @@
       <module fileurl="file://$PROJECT_DIR$/Sorting/Sorting.iml" filepath="$PROJECT_DIR$/Sorting/Sorting.iml" />
       <module fileurl="file://$PROJECT_DIR$/Stack-Queues/Stack-Queues.iml" filepath="$PROJECT_DIR$/Stack-Queues/Stack-Queues.iml" />
       <module fileurl="file://$PROJECT_DIR$/String/String.iml" filepath="$PROJECT_DIR$/String/String.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Recursion/String-/String-.iml" filepath="$PROJECT_DIR$/Recursion/String-/String-.iml" />
       <module fileurl="file://$PROJECT_DIR$/Binary Search/answers/answers.iml" filepath="$PROJECT_DIR$/Binary Search/answers/answers.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Recursion/arrays/arrays.iml" filepath="$PROJECT_DIR$/Recursion/arrays/arrays.iml" />
       <module fileurl="file://$PROJECT_DIR$/LinkList/clone_ll/clone_ll.iml" filepath="$PROJECT_DIR$/LinkList/clone_ll/clone_ll.iml" />
       <module fileurl="file://$PROJECT_DIR$/dsa.iml" filepath="$PROJECT_DIR$/dsa.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Recursion/patternwise/patternwise.iml" filepath="$PROJECT_DIR$/Recursion/patternwise/patternwise.iml" />
     </modules>
   </component>
 </project>
