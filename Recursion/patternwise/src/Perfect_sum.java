@@ -7,7 +7,7 @@ public class Perfect_sum {
         ArrayList<Integer> list = new ArrayList<>();
         System.out.println(count(arr, target, 0, 0));
     }
-    // ! Print all the subsets of the given array of Sum K
+    // ! Print all the subsequence of the given array of Sum K
     public static void perfectSum(int[] arr, int target, int index, int sum, ArrayList<Integer> list) {
         if (index == arr.length){
             if (sum == target){
@@ -24,7 +24,7 @@ public class Perfect_sum {
         // * if not picked
         perfectSum(arr, target, index + 1, sum, list);
     }
-    // ! Print one the subsets of the given array of Sum K
+    // ! Print one the subsequence of the given array of Sum K
     public static boolean one(int[] arr, int target, int index, int sum, ArrayList<Integer> list) {
         if (index == arr.length){
             if (sum == target){
@@ -43,7 +43,7 @@ public class Perfect_sum {
         if (one(arr, target, index + 1, sum, list)) return true;
         return false;
     }
-    // ! Count the number of subsets of the given array of Sum K
+    // ! Count the number of subsequence of the given array of Sum K
     public static int count(int[] arr, int target, int index, int sum) {
         if (index == arr.length){
             if (sum == target) return 1;
