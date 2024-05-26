@@ -74,4 +74,40 @@ public class Nqueen {
         return res;
     }
 
+
+    private static List<List<String>> solve(int n) {
+        char[][] board = new char[n][n];
+        for (int i = 0 ; i < n ; i++){
+            for (int j = 0 ; j < n ; j++){
+                board[i][j] = '.';
+            }
+        }
+
+        List<List<String>> res = new ArrayList<List < String >>();
+        int leftRow[] = new int[n];
+        int upperdiagonal[] = new int[2 * n -1];
+        int lowerdiagonal[] = new int[2*n - 1];
+        helper(board , 0 , res, leftRow, upperdiagonal, lowerdiagonal);
+        return res;
+    }
+
+    private static void helper(char[][] board, int col, List<List<String>> res, int[] leftRow, int[] upperdiagonal, int[] lowerdiagonal) {
+        if (col == board.length){
+            res.add(construct(board));
+            return;
+        }
+        for (int row = 0 ; row < board.length ; row++){
+            if (leftRow[row] == 0 && lowerdiagonal[row + col] == 0 && upperdiagonal[ board.length - 1 + row - col ] == 0){
+                board[row][col] = 'Q';
+                leftRow[row] = 1;
+                lowerdiagonal[row + col] = 1;
+                upperdiagonal[board.length - 1 + row - col] = 1;
+                helper(board , col + 1 , res, leftRow, upperdiagonal, lowerdiagonal);
+                board[row][col] = '.';
+                leftRow[row] = 0;
+                lowerdiagonal[row + col] = 0;
+                upperdiagonal[board.length - 1 + row - col] = 0;
+            }
+        }
+    }
 }
