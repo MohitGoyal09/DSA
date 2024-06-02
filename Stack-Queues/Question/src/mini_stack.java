@@ -2,7 +2,7 @@ import java.util.*;
 public class mini_stack {
     public static void main(String[] args) {
         MinStack obj = new MinStack();
-        obj.push(val);
+        obj.push(4);
         obj.pop();
         int param_3 = obj.top();
         int param_4 = obj.getMin();
