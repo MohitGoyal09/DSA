@@ -61,8 +61,8 @@ class Solution8 {
     public int sumSubarrayMins(int[] arr) {
         int[] left = new int[arr.length];
         int[] right = new int[arr.length];
-        ArrayDeque<Pair2> st1 = new ArrayDeque<>();
-        ArrayDeque<Pair2> st2 = new ArrayDeque<>();
+        ArrayDeque<Pair> st1 = new ArrayDeque<>();
+        ArrayDeque<Pair> st2 = new ArrayDeque<>();
 
         for (int i = 0 ; i < arr.length ; i++){
             int curr_element = arr[i];
@@ -71,7 +71,7 @@ class Solution8 {
                 count += st1.peek().minicount;
                 st1.pop();
             }
-            st1.push(new Pair2(curr_element , count));
+            st1.push(new Pair(curr_element , count));
             left[i] = count;
         }
         for (int i = arr.length - 1 ; i >= 0; i--){
@@ -81,7 +81,7 @@ class Solution8 {
                 count += st2.peek().minicount;
                 st2.pop();
             }
-            st2.push(new Pair2(curr_element , count));
+            st2.push(new Pair(curr_element , count));
             right[i] = count;
         }
         int ans = 0 ;
