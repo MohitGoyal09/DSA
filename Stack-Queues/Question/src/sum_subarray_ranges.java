@@ -165,7 +165,8 @@ class Pair2 {
 //        - Result: `greaterRight = [3, 1, 1]`
 //
 //        6. **Calculate the final answer**:
-//        - For each element, calculate the contribution to the sum of subarray ranges by subtracting the count of minimum occurrences from the count of maximum occurrences.
+//        - For each element, calculate the contribution to the sum of subarray ranges
+//        by subtracting the count of minimum occurrences from the count of maximum occurrences.
 //
 //        - **Iteration 1 (i = 0)**:
 //        - `nums[0] = 1`
