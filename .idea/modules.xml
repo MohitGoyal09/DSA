@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Arrays/Arrays.iml" filepath="$PROJECT_DIR$/Arrays/Arrays.iml" />
       <module fileurl="file://$PROJECT_DIR$/Binary Search/Arrays_2D/Arrays_2D.iml" filepath="$PROJECT_DIR$/Binary Search/Arrays_2D/Arrays_2D.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Trees/BST/BST.iml" filepath="$PROJECT_DIR$/Trees/BST/BST.iml" />
       <module fileurl="file://$PROJECT_DIR$/Basic maths/Basic maths.iml" filepath="$PROJECT_DIR$/Basic maths/Basic maths.iml" />
       <module fileurl="file://$PROJECT_DIR$/Binary Search/Binary Search.iml" filepath="$PROJECT_DIR$/Binary Search/Binary Search.iml" />
       <module fileurl="file://$PROJECT_DIR$/Bit Manuplation/Bit Manuplation.iml" filepath="$PROJECT_DIR$/Bit Manuplation/Bit Manuplation.iml" />

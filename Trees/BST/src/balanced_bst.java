@@ -1,5 +1,3 @@
-import com.sun.source.tree.Tree;
-
 public class balanced_bst {
     public static void main(String[] args) {
 
