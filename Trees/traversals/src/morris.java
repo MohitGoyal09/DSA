@@ -10,7 +10,7 @@ public class morris {
         while (curr != null){
             TreeNode prev = curr.left;
             if (prev == null){
-                ans.add(prev.val);
+                ans.add(curr.val);
                 curr = curr.right;
             }else {
                 while (prev.right != null && prev.right != curr){
@@ -35,7 +35,7 @@ public class morris {
         while (curr != null){
             TreeNode prev = curr.left;
             if (prev == null){
-                ans.add(prev.val);
+                ans.add(curr.val);
                 curr = curr.right;
             }else {
                 while (prev.right != null && prev.right != curr){
@@ -43,10 +43,10 @@ public class morris {
                 }
                 if (prev.right == null){
                     prev.right = curr;
+                    ans.add(curr.val);
                     curr = curr.left;
                 } else {
                     prev.right = null;
-                    ans.add(curr.val);
                     curr = curr.left;
                 }
             }

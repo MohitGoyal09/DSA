@@ -3,9 +3,7 @@ public class sterialize_desterialisze {
     // Encodes the tree into a single string
     public String serialize(TreeNode root) {
         // Check if the tree is empty
-        if (root == null) {
-            return "";
-        }
+        if (root == null) return "";
 
         // Initialize an empty string
         // to store the serialized data
