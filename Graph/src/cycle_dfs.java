@@ -4,7 +4,7 @@ public class cycle_dfs {
         int[] vis = new int[V];
         for (int i = 0 ; i < V ; i++){
             if (vis[i] == 0){
-                if ( dfs(i , -1 , adj , vis) == true)
+                if (dfs(i, -1, adj, vis))
                     return true;
             }
         }

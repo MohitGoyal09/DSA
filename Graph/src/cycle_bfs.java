@@ -3,10 +3,10 @@ public class cycle_bfs {
     public static void main(String[] args) {
 
     }
-    class Solution
+    static class Solution
     {
         boolean checkForCycle(ArrayList<ArrayList<Integer>> adj, int s,
-                              boolean vis[], int parent[])
+                              boolean[] vis, int[] parent)
         {
             Queue<Node> q =  new LinkedList<>(); //BFS
             q.add(new Node(s, -1));
@@ -23,7 +23,7 @@ public class cycle_bfs {
                 // go to all the adjacent nodes
                 for(Integer it: adj.get(node))
                 {
-                    if(vis[it]==false)
+                    if(!vis[it])
                     {
                         q.add(new Node(it, node));
                         vis[it] = true;
@@ -40,20 +40,20 @@ public class cycle_bfs {
         // function to detect cycle in an undirected graph
         public boolean isCycle(int V, ArrayList<ArrayList<Integer>> adj)
         {
-            boolean vis[] = new boolean[V];
+            boolean[] vis = new boolean[V];
             Arrays.fill(vis,false);
-            int parent[] = new int[V];
+            int[] parent = new int[V];
             Arrays.fill(parent,-1);
 
             for(int i=0;i<V;i++)
-                if(vis[i]==false)
+                if(!vis[i])
                     if(checkForCycle(adj, i,vis, parent))
                         return true;
 
             return false;
         }
 }
-class Node {
+static class Node {
         int first;
         int second;
         public Node(int first, int second) {

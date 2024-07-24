@@ -2,11 +2,11 @@ import java.util.ArrayList;
 
 public class undirected_cycle {
     public boolean isCyclic(int V , ArrayList<ArrayList<Integer>> adj){
-        int vist[] = new int[V];
-        int pathVist[] = new int[V];
+        int[] vist = new int[V];
+        int[] pathVist = new int[V];
         for (int i = 0 ; i < V ;i++){
             if (vist[i] == 0){
-                if (dfs(i , adj , vist , pathVist) == true) return true;
+                if (dfs(i, adj, vist, pathVist)) return true;
             }
         }
         return false;
@@ -18,7 +18,7 @@ public class undirected_cycle {
 
         for (int it : adj.get(node)){
             if (vis[it] == 0){
-                if (dfs(it , adj , vis , pathvist) == true) return true;
+                if (dfs(it, adj, vis, pathvist)) return true;
             }
             else if (pathvist[it] == 1 ) return true;
         }
