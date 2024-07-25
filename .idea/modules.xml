@@ -36,6 +36,7 @@
       <module fileurl="file://$PROJECT_DIR$/LinkList/clone_ll/clone_ll.iml" filepath="$PROJECT_DIR$/LinkList/clone_ll/clone_ll.iml" />
       <module fileurl="file://$PROJECT_DIR$/dsa.iml" filepath="$PROJECT_DIR$/dsa.iml" />
       <module fileurl="file://$PROJECT_DIR$/Recursion/patternwise/patternwise.iml" filepath="$PROJECT_DIR$/Recursion/patternwise/patternwise.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Graph/shortest_path/shortest_path.iml" filepath="$PROJECT_DIR$/Graph/shortest_path/shortest_path.iml" />
       <module fileurl="file://$PROJECT_DIR$/Recursion/String-/string.iml" filepath="$PROJECT_DIR$/Recursion/String-/string.iml" />
       <module fileurl="file://$PROJECT_DIR$/Graph/topo/topo.iml" filepath="$PROJECT_DIR$/Graph/topo/topo.iml" />
       <module fileurl="file://$PROJECT_DIR$/Trees/traversals/traversals.iml" filepath="$PROJECT_DIR$/Trees/traversals/traversals.iml" />
