@@ -21,7 +21,7 @@ public class Main {
             // {wt, node}
             pq.add(new Pair(0, 0));
             int sum = 0;
-            while (pq.size() > 0) {
+            while (!pq.isEmpty()) {
                 int wt = pq.peek().distance;
                 int node = pq.peek().node;
                 pq.remove();
