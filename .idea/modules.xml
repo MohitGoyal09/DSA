@@ -10,6 +10,7 @@
       <module fileurl="file://$PROJECT_DIR$/Bit Manuplation/Bit Manuplation.iml" filepath="$PROJECT_DIR$/Bit Manuplation/Bit Manuplation.iml" />
       <module fileurl="file://$PROJECT_DIR$/Stack-Queues/Conversions/Conversions.iml" filepath="$PROJECT_DIR$/Stack-Queues/Conversions/Conversions.iml" />
       <module fileurl="file://$PROJECT_DIR$/DDLL/DDLL.iml" filepath="$PROJECT_DIR$/DDLL/DDLL.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DP/DP.iml" filepath="$PROJECT_DIR$/DP/DP.iml" />
       <module fileurl="file://$PROJECT_DIR$/Graph/Graph.iml" filepath="$PROJECT_DIR$/Graph/Graph.iml" />
       <module fileurl="file://$PROJECT_DIR$/DDLL/HARD/HARD.iml" filepath="$PROJECT_DIR$/DDLL/HARD/HARD.iml" />
       <module fileurl="file://$PROJECT_DIR$/Arrays/Hard/Hard.iml" filepath="$PROJECT_DIR$/Arrays/Hard/Hard.iml" />
@@ -36,6 +37,7 @@
       <module fileurl="file://$PROJECT_DIR$/LinkList/clone_ll/clone_ll.iml" filepath="$PROJECT_DIR$/LinkList/clone_ll/clone_ll.iml" />
       <module fileurl="file://$PROJECT_DIR$/Graph/disjoint_Set/disjoint_Set.iml" filepath="$PROJECT_DIR$/Graph/disjoint_Set/disjoint_Set.iml" />
       <module fileurl="file://$PROJECT_DIR$/dsa.iml" filepath="$PROJECT_DIR$/dsa.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Graph/other_algos/other_algos.iml" filepath="$PROJECT_DIR$/Graph/other_algos/other_algos.iml" />
       <module fileurl="file://$PROJECT_DIR$/Recursion/patternwise/patternwise.iml" filepath="$PROJECT_DIR$/Recursion/patternwise/patternwise.iml" />
       <module fileurl="file://$PROJECT_DIR$/Graph/shortest_path/shortest_path.iml" filepath="$PROJECT_DIR$/Graph/shortest_path/shortest_path.iml" />
       <module fileurl="file://$PROJECT_DIR$/Recursion/String-/string.iml" filepath="$PROJECT_DIR$/Recursion/String-/string.iml" />
