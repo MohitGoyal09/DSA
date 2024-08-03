@@ -49,7 +49,7 @@ public class DisjointSet {
     }
     class GfG
     {
-        int find(int parent[],int node)
+        int find(int[] parent, int node)
         {
             //add code here
             if (parent[node] == node) {
@@ -59,7 +59,7 @@ public class DisjointSet {
             parent[node] =  ulp;
             return parent[node];
         }
-        void unionSet(int parent[],int u,int v)
+        void unionSet(int[] parent, int u, int v)
         {
             //add code here.
             int ulp_u = find(parent,u);
