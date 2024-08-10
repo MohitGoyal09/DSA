@@ -17,7 +17,7 @@ public class frog_jump {
         if(ind > 1) right = frogJump(arr,  ind-2, dp) + Math.abs(arr[ind] - arr[ind+2]);
         return dp[ind] = Math.min(left, right);
     }
-    // ! Memoization
+    // ! TABULATION
     public static int frogumpMemo(int[] height , int n , int[] dp){
         dp[0] = 0 ;
         for(int ind=1;ind<n;ind++){
