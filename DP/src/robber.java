@@ -28,7 +28,7 @@ public class robber {
                 int pick = arr.get(i);
                 if(i>1)
                     pick += prev2;
-                int nonPick = 0 + prev;
+                int nonPick = prev;
 
                 int cur_i = Math.max(pick, nonPick);
                 prev2 = prev;

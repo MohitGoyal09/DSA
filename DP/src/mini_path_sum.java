@@ -49,7 +49,7 @@ public class mini_path_sum {
         for ( int j = 0 ; j < m ; j++){
             dp[n-1][j] = matrix[n-1][j];
         }
-        for (int i = 0 ; i < n ; i++){
+        for (int i = 1 ; i < n ; i++){
             for ( int j = 0 ; j < m ; j++){
                 int up = matrix[i][j] + dp[i-1][j];
                 int leftDiagonal = matrix[i][j];

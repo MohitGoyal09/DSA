@@ -28,12 +28,8 @@ public class grid_unqiue {
                 }
                 int up = 0;
                 int left = 0;
-                if ( i > 0) {
-                    up = dp[i - 1][j];
-                }
-                if ( j > 0) {
-                    left = dp[i][j - 1];
-                }
+                if ( i > 0) up = dp[i - 1][j];
+                if ( j > 0) left = dp[i][j - 1];
                 dp[i][j] = up + left;
             }
         }

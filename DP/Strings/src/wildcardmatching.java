@@ -15,7 +15,7 @@ public class wildcardmatching {
 
     private static int wildcardMatchingUtil(String s1, String s2, int i, int j, int[][] dp) {
         if ( i < 0 && j < 0) return 1;
-        if ( i < 0 && j >= 0) return 0;
+        if (i < 0 && j >= 0) return 0;
         if ( j < 0 && i >= 0) return isAllstar(s1 , 1) ? 1 : 0;
         if ( s1.charAt(i) == s2.charAt(j) || s1.charAt(i) == '?'){
             return dp[i][j] = wildcardMatchingUtil(s1 , s2 , i -1 , j -1 , dp);
@@ -32,7 +32,7 @@ public class wildcardmatching {
     }
 
     private static boolean isAllstar(String s1, int i) {
-        for ( int j = 0 ; j <= i ; j++){
+        for ( int j = 1 ; j <= i ; j++){
             if ( s1.charAt(j - 1) != '*') return false;
         }
         return true;

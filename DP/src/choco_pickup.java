@@ -52,7 +52,7 @@ public class choco_pickup {
         return dp[i][j1][j2] = maxi;
     }
     public int solve3(int n , int m , int[][] grid){
-        int dp[][][] = new int[n][m][m];
+        int[][][] dp = new int[n][m][m];
         for (int j1 = 0 ; j1 <= m ; j1++){
             for (int j2 = 0 ; j2<= m ; j2++){
                 if (j1 == j2) dp[n-1][j1][j2] = grid[n-1][j1];
