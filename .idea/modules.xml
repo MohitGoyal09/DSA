@@ -37,6 +37,7 @@
       <module fileurl="file://$PROJECT_DIR$/String/String.iml" filepath="$PROJECT_DIR$/String/String.iml" />
       <module fileurl="file://$PROJECT_DIR$/DP/Strings/Strings.iml" filepath="$PROJECT_DIR$/DP/Strings/Strings.iml" />
       <module fileurl="file://$PROJECT_DIR$/Trees/Trees.iml" filepath="$PROJECT_DIR$/Trees/Trees.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Tries/Tries.iml" filepath="$PROJECT_DIR$/Tries/Tries.iml" />
       <module fileurl="file://$PROJECT_DIR$/Binary Search/answers/answers.iml" filepath="$PROJECT_DIR$/Binary Search/answers/answers.iml" />
       <module fileurl="file://$PROJECT_DIR$/Recursion/arrays/arrays.iml" filepath="$PROJECT_DIR$/Recursion/arrays/arrays.iml" />
       <module fileurl="file://$PROJECT_DIR$/LinkList/clone_ll/clone_ll.iml" filepath="$PROJECT_DIR$/LinkList/clone_ll/clone_ll.iml" />
