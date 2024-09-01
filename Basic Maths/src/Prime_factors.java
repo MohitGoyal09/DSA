@@ -54,4 +54,36 @@ public class Prime_factors {
         }
         return maxPrime;
     }
+    // ! Using Sieve
+    static List<Integer> findPrimeFactors(int N) {
+        // code here
+        List<Integer> l = new ArrayList<>();       //for storing values
+
+        int prime[] = new int[N+1];                     //making spf array
+
+        for(int i = 2; i <= N; i++){
+            prime[i] = i;                                    //make index as spf first
+        }
+
+        for(int i = 2; i*i <= N; i++){               //run for sqrt(n) times
+            if(prime[i] == i){                            //we found prime factor
+
+
+                for(int j = i*i; j <= N; j += i){    //travel its multiples
+                    if(prime[j] == j){                   //if its multiple has no change
+                        prime[j] = i;                      //make i  as spf
+                    }
+                }
+            }
+        }
+        //now each number in array is storing its spf
+
+
+        while(N != 1){                                 //run till we find all spf
+            l.add(prime[N]);                         //add it to the list
+            N /= prime[N];                          //divide till u can
+        }
+
+        return l;
+    }
 }
