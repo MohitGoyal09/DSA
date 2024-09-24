@@ -40,5 +40,5 @@ public class shortest_palidrome {
 
             return culprit + s;  // Return the shortest palindrome
         }
-    }
+    }impor
 }
