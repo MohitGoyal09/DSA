@@ -2,3 +2,8 @@ How to Indetify Stack
 if j in inner loop depend on i .
 such as loop from j = i to n  or j to i etc.
 then 100% stack is requires foor better solution
+
+In case of Circular Queue
+
+increment = ( + 1 ) % capacity
+decrement = ( - 1 + capacity ) % capacity
