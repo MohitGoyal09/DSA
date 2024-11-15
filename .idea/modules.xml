@@ -43,6 +43,7 @@
       <module fileurl="file://$PROJECT_DIR$/Binary Search/answers/answers.iml" filepath="$PROJECT_DIR$/Binary Search/answers/answers.iml" />
       <module fileurl="file://$PROJECT_DIR$/Recursion/arrays/arrays.iml" filepath="$PROJECT_DIR$/Recursion/arrays/arrays.iml" />
       <module fileurl="file://$PROJECT_DIR$/LinkList/clone_ll/clone_ll.iml" filepath="$PROJECT_DIR$/LinkList/clone_ll/clone_ll.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DP/digit_dp/digit_dp.iml" filepath="$PROJECT_DIR$/DP/digit_dp/digit_dp.iml" />
       <module fileurl="file://$PROJECT_DIR$/Graph/disjoint_Set/disjoint_Set.iml" filepath="$PROJECT_DIR$/Graph/disjoint_Set/disjoint_Set.iml" />
       <module fileurl="file://$PROJECT_DIR$/DP/dp_on_partion/dp_on_partion.iml" filepath="$PROJECT_DIR$/DP/dp_on_partion/dp_on_partion.iml" />
       <module fileurl="file://$PROJECT_DIR$/DP/dp_on_stocks/dp_on_stocks.iml" filepath="$PROJECT_DIR$/DP/dp_on_stocks/dp_on_stocks.iml" />
