@@ -1,9 +1,16 @@
-How to Indetify Stack
+How to Indetify Stack:
 if j in inner loop depend on i .
 such as loop from j = i to n  or j to i etc.
-then 100% stack is requires foor better solution
+then 100% stack is requires for better solution
 
-In case of Circular Queue
+Monotonic Stack :
+1. Find Next Greater Element
+2. Find Next Smaller Element
+3. Find Previous Greater Element
+4. Find Previous Smaller Element
+ IN layman terms : nearest greater element on left or right side of an element in an array.
 
+ QUEUE:
+In case of Circular Queue:
 increment = ( + 1 ) % capacity
 decrement = ( - 1 + capacity ) % capacity

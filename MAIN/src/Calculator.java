@@ -4,7 +4,7 @@ public class Calculator {
     public static void main(String[] args) {
         Scanner  in = new Scanner(System.in);
 
-        //Take input from user till user press X or x
+        // ! Take input from user till user press X or x
         while (true) {
             System.out.println("Enter oprator to perform");
             char op = in.next().trim().charAt(0);
