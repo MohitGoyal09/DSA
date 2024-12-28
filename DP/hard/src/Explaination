@@ -1,0 +1,90 @@
+Let me break down this solution for finding three non-overlapping subarrays with maximum sum.
+
+Detailed Approach:
+
+1. Problem Overview:
+- The goal is to find three non-overlapping subarrays of length k in the given array that have the maximum possible sum.
+- The solution should return the starting indices of these three subarrays.
+
+2. Main Components:
+
+A. Preprocessing:
+```java
+int[] sums = new int[n];
+int windowSum = 0;
+int i = 0, j = 0;
+
+while (j < nums.length) {
+    windowSum += nums[j];
+    if (j - i + 1 == k) {
+        sums[i] = windowSum;
+        windowSum -= nums[i];
+        i++;
+    }
+    j++;
+}
+```
+- Creates an array `sums` where each element represents the sum of a k-sized subarray
+- Uses sliding window technique to calculate these sums efficiently
+- If array is [1,2,3,4,5] and k=2, sums would contain [3,5,7,9]
+
+B. Dynamic Programming Solution:
+```java
+private int helper(int[] sums, int k, int idx, int rem) {
+    if (rem == 0) return 0;
+    if (idx >= sums.length) return Integer.MIN_VALUE;
+
+    if (dp[idx][rem] != -1) {
+        return dp[idx][rem];
+    }
+
+    int take = sums[idx] + helper(sums, k, idx + k, rem - 1);
+    int notTake = helper(sums, k, idx + 1, rem);
+
+    dp[idx][rem] = Math.max(take, notTake);
+    return dp[idx][rem];
+}
+```
+
+The helper function uses:
+- State parameters:
+  - idx: current index being considered
+  - rem: remaining number of subarrays to be selected
+  - dp[idx][rem]: stores maximum sum possible starting from idx with rem subarrays remaining
+
+- For each position, it considers two choices:
+  1. Take the current subarray (take)
+  2. Skip the current subarray (notTake)
+
+C. Reconstruction of Solution:
+```java
+private void solve(int[] sums, int k, int idx, int rem, List<Integer> indices) {
+    if (rem == 0 || idx >= sums.length) return;
+
+    int take = sums[idx] + helper(sums, k, idx + k, rem - 1);
+    int notTake = helper(sums, k, idx + 1, rem);
+
+    if (take >= notTake) {
+        indices.add(idx);
+        solve(sums, k, idx + k, rem - 1, indices);
+    } else {
+        solve(sums, k, idx + 1, rem, indices);
+    }
+}
+```
+- This function reconstructs the actual indices that give the maximum sum
+- It compares the 'take' and 'notTake' values to decide which path to follow
+- Stores the chosen indices in the indices list
+
+3. Time and Space Complexity:
+- Time Complexity: O(n * 3), where n is the length of the input array
+- Space Complexity: O(n * 4) for the DP array
+
+4. Execution Flow:
+1. First, calculate all possible k-sized subarray sums
+2. Initialize DP array with -1
+3. Use helper function to find maximum possible sum
+4. Use solve function to reconstruct the indices that give this maximum sum
+5. Return the indices as an array
+
+The key advantage of this solution is that it uses dynamic programming to avoid recalculating the same subproblems multiple times, making it efficient for larger inputs.

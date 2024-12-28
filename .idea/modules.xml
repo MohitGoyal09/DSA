@@ -50,6 +50,7 @@
       <module fileurl="file://$PROJECT_DIR$/DP/dp_on_partion/dp_on_partion.iml" filepath="$PROJECT_DIR$/DP/dp_on_partion/dp_on_partion.iml" />
       <module fileurl="file://$PROJECT_DIR$/DP/dp_on_stocks/dp_on_stocks.iml" filepath="$PROJECT_DIR$/DP/dp_on_stocks/dp_on_stocks.iml" />
       <module fileurl="file://$PROJECT_DIR$/dsa.iml" filepath="$PROJECT_DIR$/dsa.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DP/hard/hard.iml" filepath="$PROJECT_DIR$/DP/hard/hard.iml" />
       <module fileurl="file://$PROJECT_DIR$/heaps/heaps.iml" filepath="$PROJECT_DIR$/heaps/heaps.iml" />
       <module fileurl="file://$PROJECT_DIR$/Graph/other_algos/other_algos.iml" filepath="$PROJECT_DIR$/Graph/other_algos/other_algos.iml" />
       <module fileurl="file://$PROJECT_DIR$/Recursion/patternwise/patternwise.iml" filepath="$PROJECT_DIR$/Recursion/patternwise/patternwise.iml" />
