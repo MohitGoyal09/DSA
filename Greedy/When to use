@@ -1,0 +1,3 @@
+When to use greedy algorithms
+1. whenever a problem has small , limited set of possible values (like 1 to 6) , it's often
+hinting that you can afford brtute force over the entire set of values --> Greedy
